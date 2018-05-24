@@ -39,9 +39,10 @@ app.use((req, res, next) => {
 //eg.  localhost/help.html
 app.use(express.static(__dirname + "/public"));
 
-app.use((req, res, next) => {
-  res.render("maintenance.hbs");
-});
+// for maintenance 
+// app.use((req, res, next) => {
+//   res.render("maintenance.hbs");
+// });
 // set routes
 app.get("/", (req, res) => {
   res.render("about.hbs", {
